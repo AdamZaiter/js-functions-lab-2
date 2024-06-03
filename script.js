@@ -25,7 +25,7 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 
-function isAdult(age) {
+const isAdult(age) {
     if (age >= 18) {
         return 'Adult';
     } else {
@@ -45,8 +45,8 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-function isCharAVowel(char) {
-    let lowerChar = char.toLowerCase();
+const isCharAVowel(char) {
+    const lowerChar = char.toLowerCase();
 
     return lowerChar === 'a' || lowerChar === 'e' || lowerChar === 'i' || lowerChar === 'o' || lowerChar === 'u';
 }
@@ -64,7 +64,7 @@ Example: generateEmail('johnsmith', 'example.com') should return 'johnsmith@exam
 Complete the exercise in the space below:
 */
 
-function generateEmail(name, domain) {
+const generateEmail(name, domain) {
 return name + '@' + domain;
 }
 
@@ -80,13 +80,13 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-function greetUser(name, timeOfDay) {
-    let greetings = {
+const greetUser(name, timeOfDay) {
+    const greetings = {
         'morning': 'Good Moring',
         'afternoon': 'Good Afternoon',
         'evening': 'Good evening'
     };
-    let greeting = greetings[timeOfDay]
+    const greeting = greetings[timeOfDay]
     return `${greeting}, ${name}!`;
 
 }
@@ -104,7 +104,7 @@ Example: reverseString('rockstar') should return the string "ratskcor".
 Complete the exercise in the space below:
 */
 
-function reverseString(string) {
+const reverseString = (string) => {
     return string.split('').reverse().join('');
 
 }
@@ -123,15 +123,15 @@ Example: checkPalindrome('taco') should return false.
 Complete the exercise in the space below:
 */
 
-function checkPalindrome(str) {
-    let lowerStr = str.toLowerCase();
+const checkPalindrome = (str) => {
+    const lowerStr = str.toLowerCase();
     return lowerStr === reverseString(lowerStr);
 }
 
-function reverseString(string) {
-    return string.split('').reverse().join('');
+// const reverseString(string) {
+//     return string.split('').reverse().join('');
 
-}
+// }
 console.log('Exercise 7 Result:', checkPalindrome("cube"));
 
 /*
@@ -144,7 +144,7 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
-function maxOfThree(num1, num2, num3) {
+const maxOfThree = (num1, num2, num3) => {
     return Math.max(num1, num2, num3);
 }
 
@@ -160,9 +160,9 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
-function calculateTip(billAmount, tipPercentage) {
-    let tipDecimal = tipPercentage / 100;
-    let tipAmount = billAmount * tipDecimal;
+const calculateTip = (billAmount, tipPercentage) => {
+    const tipDecimal = tipPercentage / 100;
+    const tipAmount = billAmount * tipDecimal;
     return tipAmount
 }
 
@@ -179,7 +179,7 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-function convertTemperature (temperature, scale) {
+const convertTemperature = (temperature, scale) => {
     if (scale === 'C') {
         return (temperature * 9/5) + 32; }
     else if (scale === 'F') {
