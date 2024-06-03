@@ -46,7 +46,7 @@ Complete the exercise in the space below:
 */
 
 function isCharAVowel(char) {
-    var lowerChar = char.toLowerCase();
+    let lowerChar = char.toLowerCase();
 
     return lowerChar === 'a' || lowerChar === 'e' || lowerChar === 'i' || lowerChar === 'o' || lowerChar === 'u';
 }
@@ -81,12 +81,12 @@ Complete the exercise in the space below:
 */
 
 function greetUser(name, timeOfDay) {
-    var greetings = {
+    let greetings = {
         'morning': 'Good Moring',
         'afternoon': 'Good Afternoon',
         'evening': 'Good evening'
     };
-    var greeting = greetings[timeOfDay]
+    let greeting = greetings[timeOfDay]
     return `${greeting}, ${name}!`;
 
 }
@@ -124,7 +124,7 @@ Complete the exercise in the space below:
 */
 
 function checkPalindrome(str) {
-    var lowerStr = str.toLowerCase();
+    let lowerStr = str.toLowerCase();
     return lowerStr === reverseString(lowerStr);
 }
 
@@ -161,8 +161,8 @@ Complete the exercise in the space below:
 */
 
 function calculateTip(billAmount, tipPercentage) {
-    var tipDecimal = tipPercentage / 100;
-    var tipAmount = billAmount * tipDecimal;
+    let tipDecimal = tipPercentage / 100;
+    let tipAmount = billAmount * tipDecimal;
     return tipAmount
 }
 
