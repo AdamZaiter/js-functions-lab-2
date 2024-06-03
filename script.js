@@ -25,7 +25,7 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 
-const isAdult(age) {
+const isAdult = (age) => {
     if (age >= 18) {
         return 'Adult';
     } else {
@@ -45,7 +45,7 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-const isCharAVowel(char) {
+const isCharAVowel = (char) => {
     const lowerChar = char.toLowerCase();
 
     return lowerChar === 'a' || lowerChar === 'e' || lowerChar === 'i' || lowerChar === 'o' || lowerChar === 'u';
@@ -64,7 +64,7 @@ Example: generateEmail('johnsmith', 'example.com') should return 'johnsmith@exam
 Complete the exercise in the space below:
 */
 
-const generateEmail(name, domain) {
+const generateEmail = (name, domain) => {
 return name + '@' + domain;
 }
 
@@ -80,9 +80,9 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-const greetUser(name, timeOfDay) {
+const greetUser = (name, timeOfDay) => {
     const greetings = {
-        'morning': 'Good Moring',
+        'morning': 'Good Morning',
         'afternoon': 'Good Afternoon',
         'evening': 'Good evening'
     };
